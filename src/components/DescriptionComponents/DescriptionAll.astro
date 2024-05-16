@@ -1,0 +1,17 @@
+---
+
+const { imageSrc, title, description} = Astro.props;
+import "./src/styles/descriptionBlock.css"
+---
+
+<div class="swiper-slide">
+    <img src={imageSrc} alt="" />
+    <div class="card-description">
+      <div class="card-title">
+        <h4>{title}</h4>
+      </div>
+      <div class="card-text">
+        <p>{description}</p>
+      </div>
+    </div>
+</div>

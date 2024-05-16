@@ -1,0 +1,11 @@
+    .inicio-header {
+    background-image: url('../assets/images/principal.jpeg'); 
+    background-size: cover; 
+    height: 665px; 
+    position: absolute; 
+    top: 0px; 
+    left: 0; 
+    width: 100%; 
+    z-index: -1; 
+    
+}

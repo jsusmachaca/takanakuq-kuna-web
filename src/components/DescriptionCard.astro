@@ -1,0 +1,42 @@
+---
+import "./src/styles/descriptionBlock.css"
+import DescriptionAll from "./DescriptionComponents/DescriptionAll.astro"
+---
+
+<div class="container">
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <DescriptionAll
+          imageSrc='./src/assets/images/1.jpeg'
+          title='Descripción'
+          description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non'
+        />
+        <DescriptionAll
+            imageSrc='./src/assets/images/2.jpeg'
+            title='Descripción 2'
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non'
+        />
+        <DescriptionAll
+            imageSrc='./src/assets/images/3.jpeg'
+            title='Descripción 3'
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non'
+        />
+        <DescriptionAll
+            imageSrc='./src/assets/images/1.jpeg'
+            title='Descripción 2'
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non'
+        />
+        <DescriptionAll
+            imageSrc='./src/assets/images/3.jpeg'
+            title='Descripción 2'
+            description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non'
+        />
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <client:only>
+      <script src="../scripts/descripcion.js"></script>
+    </client:only>
+  </div>
